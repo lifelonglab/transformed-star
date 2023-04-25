@@ -1,0 +1,23 @@
+#stategy params
+strategy_name: AGEM
+patterns_per_exp: 256
+minibatch_size:  128
+
+#model and training params
+model_name: wide_VGG9
+num_classes: 10
+lr: 0.001
+hs: 250
+momentum: 0.9
+epochs: 20
+
+#scenario params
+scenario: svhn
+resized: not
+balanced: not
+number_of_samples_per_class: 500
+scenario_type: domain_incremental
+
+
+num_class_from_imagenet: 10
+num_experiences: 5
